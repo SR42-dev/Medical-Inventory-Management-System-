@@ -1,0 +1,39 @@
+Project : Medical inventory and billing system
+
+Code review notes & stuff to implement: 
+
+- batch number + reference id
+- manufacturing date
+- type name
+- brand name 
+- wholesale prices (cost + selling)
+- different types of quantities (eg. safety stock)
+- stock report (to monitor stocks that fall below safety threshold)
+- sales report
+- GST report
+- automatic order placing
+- update item
+- look up proper terminologies used in medical warehousing industry 
+
+Features :
+- C based menu (switch-case)
+- Struct based inventory - C file manager
+- Binary file based billing - C file manager
+- Encryption for payments - Encryption in C, file accessed and uploaded to spreadsheet with python
+- Encryption of medical prescription for safety - Encryption in C, file accessed and uploaded to spreadsheet with python
+
+Potential additions :
+- API for maintaining database addresses - python, google sheets
+- OpenCV QR code detection to check inventory from printed list - python
+- GUI - python
+
+Stuff to do :
+- Make cipher functions accept and return data
+- Make function to feed struct data into binary file
+- Compulsory make file
+
+Files used :
+
+- database (inventory, payment info, invoice) - encrypted
+- for individual purchases (bills, payment confirmation) - not encrypted
+
